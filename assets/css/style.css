@@ -4,6 +4,7 @@
   --clr-default-font: rgb(59, 59, 59);
   --clr-header-font: rgba(37, 37, 37);
   --clr-header-shadow: 37, 37, 37;
+  --section-min-height: 600px;
 }
 
 body {
@@ -22,7 +23,6 @@ h2 {
 }
 
 .h1 {
-  margin-left: 2em;
 }
 
 .logo {
@@ -31,6 +31,7 @@ h2 {
   font-size: 2em;
   font-weight: 700;
   text-shadow: 1px 1px rgba(var(--clr-header-shadow), 0.5);
+  margin-left: 1.5em;
 }
 
 .header {
@@ -72,7 +73,7 @@ a {
 
 .section-hero,
 .hero-wrapper {
-  min-height: 600px;
+  min-height: var(--section-min-height);
   width: 100%;
   position: relative;
 }
@@ -108,6 +109,39 @@ a {
   padding-left: 10px;
   background-color: rgba(241, 109, 107, 0.7);
   position: absolute;
-  bottom: 0px;
+  bottom: 50px;
   right: 150px;
+}
+
+.club-ethos {
+}
+
+.section-club-ethos {
+  width: 85%;
+  margin-inline: auto;
+}
+
+.grid {
+  min-height: var(--section-min-height);
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.left-about,
+.center-about,
+.right-about {
+  padding-top: 30px;
+}
+
+.left-about-p {
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 50%;
+  border-top: 1px solid currentColor;
+  margin-block: 5px;
 }
