@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;400&display=swap");
 
 :root {
-    --clr-default-font: rgb(59, 59, 59);
-    --clr-header-font: rgba(37, 37, 37);
-    --clr-header-shadow: 37, 37, 37;
+  --clr-default-font: rgb(59, 59, 59);
+  --clr-header-font: rgba(37, 37, 37);
+  --clr-header-shadow: 37, 37, 37;
 }
 
 body {
@@ -21,25 +21,28 @@ h2 {
   font-family: Oswald, sans-serif;
 }
 
+.h1 {
+  margin-left: 2em;
+}
+
 .logo {
   letter-spacing: 4px;
   color: var(--clr-header-font);
   font-size: 2em;
   font-weight: 700;
-  text-shadow: 1px 1px rgba(var(--clr-header-shadow),0.5);
+  text-shadow: 1px 1px rgba(var(--clr-header-shadow), 0.5);
 }
 
 .header {
   display: flex;
-  margin-left: 2em;
   padding: 1em;
 }
 
 .nav-div {
-    display: flex;
-    flex:1;
-    justify-content: end;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: center;
 }
 
 .nav-ul {
@@ -50,20 +53,45 @@ h2 {
 
 .nav-link,
 a {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    color: var(--clr-header-font);
-    padding-bottom: 0.125em;
-    padding-inline: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: var(--clr-header-font);
+  padding-bottom: 0.125em;
+  padding-inline: 0.5em;
 }
 
 .nav-link:hover {
-    border-bottom: 2px solid currentColor;
-    border-radius: 5px;
+  border-bottom: 2px solid currentColor;
+  border-radius: 5px;
 }
 
 .current-page {
-    border-bottom: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+}
 
+.section-hero,
+.hero-wrapper {
+  min-height: 600px;
+  width: 100%;
+}
+
+.section-hero {
+  background: url("../images/hero-image.webp") no-repeat center center;
+  animation-name: hero-zoom;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.hero-wrapper {
+  overflow: hidden;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
