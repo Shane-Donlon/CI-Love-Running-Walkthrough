@@ -242,7 +242,8 @@ hr {
 }
 
 .footer-ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 4em;
   justify-content: center;
 }
@@ -253,14 +254,4 @@ hr {
 
 .footer-social-meida-icons:hover {
   color: rgba(var(--clr-header-shadow));
-}
-
-@media (width < 500px) {
-
-
-  .cover-text {
-    position: absolute;
- inset: 25%;
-    margin-inline: auto;
-  }
 }
