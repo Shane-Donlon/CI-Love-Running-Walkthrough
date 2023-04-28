@@ -237,3 +237,22 @@ hr {
 ::selection {
   background-color: rgba(var(--clr-header-shadow));
 }
+
+.footer {
+  padding-block: 2em;
+  margin-bottom: 4em;
+}
+
+.footer-ul {
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+}
+
+.footer-social-meida-icons {
+font-size: 3em;
+}
+
+.footer-social-meida-icons:hover {
+  color: rgba(var(--clr-header-shadow));
+}
