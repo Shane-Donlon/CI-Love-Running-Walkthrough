@@ -178,10 +178,28 @@ hr {
 }
 
 
-.section-meeting {
+
+.card {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: #fafafa;
     background: url("../images/dublin-city.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    background-color: rgba(0,0,0, 0.6);
+    background-blend-mode: soft-light;
+    min-height: 16rem;  
+}
+
+.card-wrapper {
+    width: calc(100% - 1.5rem);
+    margin-inline: auto;
+}
+
+.fas {
+    margin-left: 1em;
 }
