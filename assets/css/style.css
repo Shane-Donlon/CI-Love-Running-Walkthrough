@@ -3,10 +3,12 @@
 :root {
   --clr-default-font: rgb(59, 59, 59);
   --clr-header-font: rgba(37, 37, 37);
+  --clr-100: #fafafa;
   --clr-header-shadow: 37, 37, 37;
   --section-min-height: 600px;
   --wrapper-min-width: 100% - 2rem;
   --wrapper-max-width: 70rem;
+  --default-letter-spacing: 4px;
 }
 
 body {
@@ -16,8 +18,8 @@ body {
 }
 
 .content-wrapper {
-    width: min(var(--wrapper-min-width), var(--wrapper-max-width));
-    margin-inline: auto;
+  width: min(var(--wrapper-min-width), var(--wrapper-max-width));
+  margin-inline: auto;
 }
 
 p {
@@ -28,12 +30,23 @@ h1,
 h2 {
   font-family: Oswald, sans-serif;
 }
-
 .h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.h3 {
+    font-size: 1.5em;
+    font: 500;
 }
 
 .logo {
-  letter-spacing: 4px;
+  letter-spacing: var(--default-letter-spacing);
   color: var(--clr-header-font);
   font-size: 2em;
   font-weight: 700;
@@ -62,7 +75,7 @@ h2 {
 .nav-link,
 a {
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: var(--default-letter-spacing);
   text-decoration: none;
   color: var(--clr-header-font);
   padding-bottom: 0.125em;
@@ -109,7 +122,7 @@ a {
   font-size: 130%;
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: var(--default-letter-spacing);
   width: 300px;
   min-height: 200px;
   padding-top: 40px;
@@ -118,9 +131,6 @@ a {
   position: absolute;
   bottom: 50px;
   right: 150px;
-}
-
-.club-ethos {
 }
 
 .section-club-ethos {
@@ -143,7 +153,7 @@ a {
 }
 
 hr {
-  width: 50%;
+  width: 75%;
   border-top: 1px solid currentColor;
   margin-block: 5px;
 }
@@ -177,29 +187,34 @@ hr {
   border-radius: 50%;
 }
 
-
-
 .card {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    color: #fafafa;
-    background: url("../images/dublin-city.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden;
-    background-color: rgba(0,0,0, 0.6);
-    background-blend-mode: soft-light;
-    min-height: 16rem;  
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 16rem;
+  color: var(--clr-100);
+  border-radius: 1em;
+  background: url("../images/dublin-city.webp");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 
 .card-wrapper {
-    width: calc(100% - 1.5rem);
-    margin-inline: auto;
+  width: calc(100% - 1.5rem);
+  margin-inline: auto;
 }
 
-.fas {
-    margin-left: 1em;
+[class*="fa"]{
+  margin-left: 0.5em;
+}
+
+.run-style {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: var(--default-letter-spacing);
 }
