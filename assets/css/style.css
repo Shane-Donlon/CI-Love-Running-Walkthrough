@@ -31,18 +31,18 @@ h2 {
   font-family: Oswald, sans-serif;
 }
 .h1 {
-    font-size: 3em;
-    font-weight: 700;
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .h2 {
-    font-size: 2em;
-    font-weight: 600;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .h3 {
-    font-size: 1.5em;
-    font: 500;
+  font-size: 1.5em;
+  font: 500;
 }
 
 .logo {
@@ -77,14 +77,27 @@ a {
   letter-spacing: var(--default-letter-spacing);
   text-decoration: none;
   color: var(--clr-header-font);
-  padding-bottom: 0.125em;
-  padding-inline: 0.5em;
+  position: relative;
+  padding-bottom: 0.5em;
 }
 
-.nav-link:hover {
-  border-bottom: 2px solid currentColor;
-  border-radius: 5px;
+.nav-link:focus {
+  outline: none;
 }
+
+.nav-link:focus::after,
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 5px;
+  width: 100%;
+  background-color: rgba(var(--clr-header-shadow));
+  border-radius: 100vmax;
+  }
+
+  
 
 .current-page {
   border-bottom: 2px solid currentColor;
@@ -133,14 +146,13 @@ a {
 }
 
 .text-shadow {
-    text-shadow: 0.5px 0px rgba(var(--clr-header-shadow));
+  text-shadow: 0.5px 0px rgba(var(--clr-header-shadow));
 }
 
-
 .h2-club-ethos {
-    margin-top: 2em;
-    text-align: center;
-}   
+  margin-top: 2em;
+  text-align: center;
+}
 .grid {
   min-height: var(--section-min-height);
   display: grid;
@@ -212,16 +224,16 @@ hr {
   margin-inline: auto;
 }
 
-[class*="fa"]{
+[class*="fa"] {
   margin-left: 0.5em;
 }
 
 .run-style {
-    font-size: 1.6em;
-    text-transform: uppercase;
-    letter-spacing: var(--default-letter-spacing);
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: var(--default-letter-spacing);
 }
 
 ::selection {
-    background-color: rgba(var(--clr-header-shadow));
+  background-color: rgba(var(--clr-header-shadow));
 }
