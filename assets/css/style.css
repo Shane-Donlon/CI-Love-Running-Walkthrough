@@ -95,9 +95,7 @@ a {
   width: 100%;
   background-color: rgba(var(--clr-header-shadow));
   border-radius: 100vmax;
-  }
-
-  
+}
 
 .current-page {
   border-bottom: 2px solid currentColor;
@@ -250,9 +248,19 @@ hr {
 }
 
 .footer-social-meida-icons {
-font-size: 3em;
+  font-size: 3em;
 }
 
 .footer-social-meida-icons:hover {
   color: rgba(var(--clr-header-shadow));
+}
+
+@media (width < 500px) {
+
+
+  .cover-text {
+    position: absolute;
+ inset: 25%;
+    margin-inline: auto;
+  }
 }
