@@ -5,12 +5,19 @@
   --clr-header-font: rgba(37, 37, 37);
   --clr-header-shadow: 37, 37, 37;
   --section-min-height: 600px;
+  --wrapper-min-width: 100% - 2rem;
+  --wrapper-max-width: 70rem;
 }
 
 body {
   font-family: Lato, sans-serif;
   font-weight: 300;
   color: var(--clr-default-font);
+}
+
+.content-wrapper {
+    width: min(var(--wrapper-min-width), var(--wrapper-max-width));
+    margin-inline: auto;
 }
 
 p {
@@ -147,27 +154,34 @@ hr {
 }
 
 .right-about hr {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-
-
 .circle-container {
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-    border-style: solid;
-    border-color: #ccc;
-    border-width: 1px;
-    border-radius: 50%;
-    margin-inline: auto;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 1px;
+  border-radius: 50%;
+  margin-inline: auto;
 }
 
 .circle-cover-bg {
-    height: 100%;
-    border-radius: 50%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .circle-cover-bg .img {
-    border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+.section-meeting {
+    background: url("../images/dublin-city.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
