@@ -296,8 +296,21 @@ hr {
     'header-sign-up'
     'main-sign-up'
     'footer-sign-up';
-    align-items: center;
 }
+
+
+.sign-up-grid {
+  display: grid;
+  align-items: center;
+}
+
+.bg-image-grid-main {
+    height: 100%;
+    grid-area: main-sign-up;
+    background-image: url("../images/formbg.jpg");
+    background-size: cover;
+}
+
 
 .legend {
   margin-inline: 2em;
@@ -311,6 +324,7 @@ hr {
   margin-inline: 10% auto;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
+  color: var(--clr-100);
 }
 
 .form-h2 {
