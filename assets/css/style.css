@@ -150,7 +150,7 @@ a {
 }
 
 .h2-club-ethos {
- margin-block: 1em;
+  margin-block: 1em;
   text-align: center;
   font-size: 3em;
 }
@@ -252,8 +252,8 @@ hr {
 }
 
 .footer-link {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social-meida-icons {
@@ -271,15 +271,26 @@ hr {
   gap: 0.5em;
 }
 
+.gallery-card {
+  position: relative;
+}
+
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  mix-blend-mode: darken;
+}
+
+
 
 .gallery-img {
   height: 100%;
   width: 100%;
 }
 
-
-@media (max-width: 500px) 
-{
+@media (max-width: 500px) {
   .cover-text {
     display: block;
     position: relative;
@@ -287,10 +298,10 @@ hr {
     margin: auto;
   }
 
-.h1 {
-  font-size: 3em;
-  margin-left: 0;
-}
+  .h1 {
+    font-size: 3em;
+    margin-left: 0;
+  }
 
   .h2-club-ethos {
     padding-bottom: 1em;
@@ -299,5 +310,4 @@ hr {
   .header {
     gap: 1em;
   }
-  
 }
