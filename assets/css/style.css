@@ -306,21 +306,47 @@ hr {
 
 
 .fieldset {
+  position: relative;
   width: 40%;
-  min-height: 20%;
-  margin-inline: 20% auto;
+  margin-inline: 10% auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-h2 {
+  padding-inline: 1em;
+  margin-inline: auto;
 }
 
 .fieldset * {
   display: block;
+
 }
 
+
 .form  * {
-  margin-block: 0.2em;
+  margin-block: 0.5em;
+}
+
+.form {
+  accent-color: rgba(var(--clr-header-shadow));
+}
+
+.label {
+  font-size: 1.125rem;
 }
 .input-sign-up {
   width: 100%;
 }
+
+.input-sign-up:focus-visible,   
+.input-sign-up:active {
+  background-color: rgba(var(--clr-header-shadow));
+   outline-color:rgba(var(--clr-header-shadow));
+   font-weight: 700;
+}
+
+
 
 .form-content-wrapper {
   width: 80%;
@@ -330,6 +356,22 @@ hr {
 .radio-flex {
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
+}
+
+.btn {
+  --btn-height:100px;
+  --btn-width: var(--btn-height);
+  background-color: rgba(var(--clr-header-shadow));
+border-radius: 100vmax;
+  padding: 0.5em 1em;
+  color: var(--clr-100);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 500px) {
@@ -351,5 +393,9 @@ hr {
 
   .header {
     gap: 1em;
+  }
+
+  .radio-flex {
+    gap: 0.5em;
   }
 }
