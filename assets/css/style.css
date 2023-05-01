@@ -414,8 +414,13 @@ border-radius: 100vmax;
     gap: 0.5em;
   }
 
+ 
+}
+
+@media (width <= 740px) {
+
   .fieldset {
-    width: 60%;
+    width: 90%;
     margin-inline: auto;
   }
 }
