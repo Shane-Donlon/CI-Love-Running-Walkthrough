@@ -309,6 +309,8 @@ hr {
     grid-area: main-sign-up;
     background-image: url("../images/formbg.jpg");
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color;
 }
 
 
@@ -323,7 +325,6 @@ hr {
   width: 40%;
   margin-inline: 10% auto;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
   color: var(--clr-100);
 }
 
