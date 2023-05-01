@@ -250,6 +250,11 @@ hr {
   justify-content: center;
 }
 
+.footer-link {
+ display: flex;
+ justify-content: center;
+}
+
 .footer-social-meida-icons {
   font-size: 3em;
 }
