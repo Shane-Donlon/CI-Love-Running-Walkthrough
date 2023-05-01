@@ -413,4 +413,9 @@ border-radius: 100vmax;
   .radio-flex {
     gap: 0.5em;
   }
+
+  .fieldset {
+    width: 60%;
+    margin-inline: auto;
+  }
 }
