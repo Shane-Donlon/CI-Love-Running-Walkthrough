@@ -290,6 +290,11 @@ hr {
   width: 100%;
 }
 
+.h2-legend {
+  margin-inline: 2em;
+  padding-inline: 1em;
+}
+
 @media (max-width: 500px) {
   .cover-text {
     display: block;
