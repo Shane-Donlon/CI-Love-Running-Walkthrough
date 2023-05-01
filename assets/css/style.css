@@ -150,8 +150,9 @@ a {
 }
 
 .h2-club-ethos {
-  margin-top: 2em;
+ margin-block: 1em;
   text-align: center;
+  font-size: 3em;
 }
 .grid {
   min-height: var(--section-min-height);
@@ -270,8 +271,10 @@ hr {
   gap: 0.5em;
 }
 
+
 .gallery-img {
   height: 100%;
+  width: 100%;
 }
 
 
@@ -281,6 +284,20 @@ hr {
     display: block;
     position: relative;
     inset: 0;
-    margin: 1em auto;
+    margin: auto;
   }
+
+.h1 {
+  font-size: 3em;
+  margin-left: 0;
+}
+
+  .h2-club-ethos {
+    padding-bottom: 1em;
+  }
+
+  .header {
+    gap: 1em;
+  }
+  
 }
